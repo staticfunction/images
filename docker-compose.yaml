@@ -1,0 +1,15 @@
+rabbitmq: 
+  image: rabbitmq
+  environment: 
+    DNSDOCK_ALIAS: rabbitmq.docker
+  ports:
+    - "5672:5672"
+mongo: 
+  image: mongo:3.2
+  entrypoint:
+    - mongod
+    - --smallfiles
+  environment: 
+    DNSDOCK_ALIAS: mongo.docker
+  ports:
+    - "27017:27017"
