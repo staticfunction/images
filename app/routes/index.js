@@ -26,6 +26,9 @@ router.route('/:width/:height/:key(*).:ext')
         (req, res, next) => {
             req.sanitize("width").toInt();
             req.sanitize("height").toInt();
+            req.sanitize("key").trim();
+            req.sanitize("ext").trim();
+            req.sanitize("ext").toLowerCase();
             next();
         },
         (req, res, next) => {
