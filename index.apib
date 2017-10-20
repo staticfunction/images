@@ -16,3 +16,17 @@ FORMAT: 1A
                     "name": "template"
                 }
             }
+
+
+## Images [/{width}/{height}/{key}.{ext}]
+
++ parameters
+    + width: 1020 (required, integer) - requested width for the Images 
+    + height: 780 (required, integer) - requested height for the Images 
+    + key: users/ha998 (required, string) - key of the image stored in the s3 bucket
+    + ext: jpeg (required, string) - desired extension for the image
+
+
+### GET
+
++ Response 200 (image/jpeg)

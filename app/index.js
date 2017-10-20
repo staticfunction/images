@@ -5,8 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
-var bson = require('bson');
-var mongodb = require('mongodb');
 var assert = require('assert');
 var pjson = require('pjson');
 var app = express();
@@ -81,11 +79,6 @@ app.use(expressValidator({
   }
 }));
 
-mongodb.MongoClient.connect(process.env.MONGODB_URI, (err, db) => {
-  assert.equal(err, null);
-  app.locals.db = db;
-  //create initial indexes here
-})
 
 app.use('/',Route);
 

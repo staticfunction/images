@@ -8,6 +8,7 @@
     "aglio": "^2.3.0",
     "amqplib": "^0.5.1",
     "assert": "^1.4.1",
+    "aws-sdk": "^2.137.0",
     "body-parser": "^1.17.2",
     "bson": "^1.0.4",
     "cookie-parser": "^1.4.3",
@@ -19,12 +20,12 @@
     "express-validator": "^3.2.1",
     "graphql": "^0.10.3",
     "jsonwebtoken": "^7.4.1",
-    "mongodb": "^2.2.30",
     "morgan": "^1.8.2",
     "password-hash": "^1.2.2",
     "path": "^0.12.7",
     "pjson": "^1.0.8",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "sharp": "^0.18.4"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
